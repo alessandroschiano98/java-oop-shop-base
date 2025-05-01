@@ -21,9 +21,7 @@ public class Prodotto {
         this.iva = iva;
     }
     // METODI
-    public String codice(){
-        return "Codice Prodotto: " + codice;
-    }
+ 
     
 
 }
