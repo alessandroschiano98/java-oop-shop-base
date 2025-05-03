@@ -14,7 +14,7 @@ public class Prodotto {
     public Prodotto(String nome, String descrizione, float prezzo, int iva) {
         // CODICE (PRODOTTO));
         Random generator = new Random();
-        this.codice = generator.nextInt(80000);
+        this.codice = generator.nextInt(100000);
         // NOME (PRODOTTO)
         this.nome = nome;
         // DESCRIZIONE (PRODOTTO)
@@ -22,8 +22,9 @@ public class Prodotto {
         // PREZZO (PRODOTTO)
         this.prezzo = prezzo;
         // CALCOLO IVA (PRODOTTO)
-        this.iva = 22;
+        this.iva = iva;
     }
+
     // METODI
     public int getCodice() {
         return codice;
@@ -50,15 +51,16 @@ public class Prodotto {
     }
 
     public void setPrezzo(float prezzo) {
-        if (prezzo >= 0) {
-            this.prezzo = prezzo;
-        }
+        this.prezzo = prezzo;
+
     }
-    
+
     public float getPrezzoConIva() {
         return prezzo + (prezzo * iva / 100);
     }
 
-
+    public String getNomeEsteso() {
+        return nome + " " + getCodice();
+    }
 
 }
