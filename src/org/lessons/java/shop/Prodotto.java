@@ -14,7 +14,7 @@ public class Prodotto {
     public Prodotto(String nome, String descrizione, float prezzo, int iva) {
         // CODICE (PRODOTTO));
         Random generator = new Random();
-        this.codice = generator.nextInt(12);
+        this.codice = generator.nextInt(80000);
         // NOME (PRODOTTO)
         this.nome = nome;
         // DESCRIZIONE (PRODOTTO)
