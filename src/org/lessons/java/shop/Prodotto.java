@@ -10,7 +10,6 @@ public class Prodotto {
     public String descrizione;
     public float prezzo;
     public int iva;
-    public String euroValuta = "€";
 
     public Prodotto(String nome, String descrizione, float prezzo, int iva) {
         // CODICE (PRODOTTO));
