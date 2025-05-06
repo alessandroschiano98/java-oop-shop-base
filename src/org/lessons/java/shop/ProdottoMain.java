@@ -10,7 +10,7 @@ public class ProdottoMain {
         System.out.println("Nome: " + shampoo.getNome());
         System.out.println("Descrizione: " + shampoo.getDescrizione());
         System.out.println("Prezzo: " + shampoo.getPrezzo() + " euro");
-        System.out.println("Prezzo con IVA: " + shampoo.getPrezzoConIva() + " euro");
+        System.out.println("Prezzo con IVA: " + String.format("%.2f", shampoo.getPrezzoConIva()) + " euro");
         System.out.println(shampoo.getNomeEsteso());
     }
 
