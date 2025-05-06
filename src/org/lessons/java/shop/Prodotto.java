@@ -10,6 +10,7 @@ public class Prodotto {
     public String descrizione;
     public float prezzo;
     public int iva;
+    public String euroValuta = "€";
 
     public Prodotto(String nome, String descrizione, float prezzo, int iva) {
         // CODICE (PRODOTTO));
@@ -56,7 +57,7 @@ public class Prodotto {
     }
 
     public float getPrezzoConIva() {
-        return prezzo + (prezzo * iva / 100);
+        return prezzo + (prezzo * iva / 100f);
     }
 
     public String getNomeEsteso() {
